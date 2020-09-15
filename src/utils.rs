@@ -30,3 +30,14 @@ pub fn sieve(n: usize) -> Vec<bool> {
     }
     flags
 }
+
+pub fn make_divisors(n: i64) -> Vec<i64> {
+    let mut div: Vec<i64> = Vec::new();
+    for i in 1..(n as f64).sqrt().floor() as i64 {
+        if n % i == 0 {
+            div.push(i);
+            div.push(n / i);
+        }
+    }
+    div
+}
