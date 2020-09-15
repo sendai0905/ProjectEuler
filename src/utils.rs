@@ -41,3 +41,12 @@ pub fn make_divisors(n: i64) -> Vec<i64> {
     }
     div
 }
+
+// from https://qiita.com/osanshouo/items/869bf08e979831ebb662#knuth-%E3%81%AE%E6%96%B9%E6%B3%95
+pub fn binom_asc(n: i64, k: i64) -> i64 {
+    if k == 0 || k == n {
+        1
+    } else {
+        binom_asc(n - 1, k - 1) * n / k
+    }
+}
