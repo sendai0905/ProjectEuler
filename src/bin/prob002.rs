@@ -1,4 +1,4 @@
-pub fn main() {
+fn main() {
     let mut fib = vec![1, 2];
     let mut ans = 2;
     while fib.last() < Some(&4000000) {

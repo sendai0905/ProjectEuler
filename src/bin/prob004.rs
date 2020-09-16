@@ -1,11 +1,11 @@
 use std::cmp::max;
 
-pub fn check_palindromic_number(n: i32) -> bool {
+fn check_palindromic_number(n: i32) -> bool {
     let s = n.to_string();
     s == s.chars().rev().collect::<String>()
 }
 
-pub fn main() {
+fn main() {
     let mut ans = 0;
     for i in 100..999 {
         for j in 100..999 {

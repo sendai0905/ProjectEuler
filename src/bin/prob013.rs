@@ -101,7 +101,7 @@ const NUMS: &str = "37107287533902102798797998220837590246510135740250
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690";
 
-pub fn main() {
+fn main() {
     let nums: Vec<&str> = NUMS.split("\n").collect();
     let (mut upper, mut lower): (Vec<i128>, Vec<i128>) = (Vec::new(), Vec::new());
     for n in nums {

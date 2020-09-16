@@ -1,6 +1,6 @@
 use euler::utils::make_divisors;
 
-pub fn main() {
+fn main() {
     let mut ans: i64 = 0;
     let mut d = 1;
     loop {

@@ -1,6 +1,6 @@
 use euler::utils::is_prime;
 
-pub fn main() {
+fn main() {
     let mut ans = 1;
     let mut count = 0;
     while count != 10001 {

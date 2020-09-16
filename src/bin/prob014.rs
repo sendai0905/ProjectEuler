@@ -1,4 +1,4 @@
-pub fn main() {
+fn main() {
     let (mut ans, mut max_cnt) = (0, 0);
     for i in 1..1_000_001 {
         let mut cnt = 0;

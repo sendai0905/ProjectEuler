@@ -1,4 +1,4 @@
-pub fn main() {
+fn main() {
     'outer: for i in 1..334 {
         let lim = ((1000 - i) as f32 / 2.0).round() as i32;
         for j in i + 1..lim {

@@ -1,4 +1,4 @@
-pub fn main() {
+fn main() {
     let mut n = 0;
     for i in 1..101 {
         n += i * i;

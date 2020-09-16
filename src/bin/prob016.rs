@@ -3,7 +3,7 @@ extern crate num;
 use num::bigint::ToBigUint;
 use num::BigUint;
 
-pub fn main() {
+fn main() {
     let mut tmp: BigUint = 1.to_biguint().unwrap();
     for _ in 0..1000 {
         tmp *= 2.to_biguint().unwrap();
